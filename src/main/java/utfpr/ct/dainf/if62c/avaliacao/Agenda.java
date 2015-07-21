@@ -43,7 +43,6 @@ public class Agenda {
         Aviso av = new Aviso(compromisso);
         AvisoFinal af = new AvisoFinal(compromisso);
         compromisso.registraAviso(av);
-        
         Timer timer = new Timer(compromisso.getDescricao());
         timer.schedule(av, new Date(date.getTime() - antecedencia * 1000));
         timer.schedule(af, date);
@@ -54,7 +53,6 @@ public class Agenda {
         Aviso av = new Aviso(compromisso);
         AvisoFinal af = new AvisoFinal(compromisso);
         compromisso.registraAviso(av);
-        
         Timer timer = new Timer(compromisso.getDescricao());
         timer.schedule(av, new Date(date.getTime() - antecedencia * 1000), intervalo * 1000);
         timer.schedule(af, date);
