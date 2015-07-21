@@ -51,4 +51,12 @@ public class Compromisso {
         return dateFormat.format(data) + ": " + descricao;
     }
 
+    Date getDate() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void removeAviso(Aviso aviso) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
